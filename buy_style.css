@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(82, 82, 82);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo h1 {
+    text-align: center;
+    margin: 10px;
+    font-family: 'Calligraffitti', cursive;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    display: flex;
+    top: 0;
+    border-bottom: 2px solid red;
+}
+
+.head ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-right: 2px solid rgb(85, 84, 84);
+}
+
+.head ul li i {
+    padding: 0 9px;
+}
+
+.head ul li:hover {
+    background-color: rgb(85, 84, 84);
+}
+
+.model {
+    width: 100%;
+    height: 500px;
+    background: url("images/model.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+}
+
+.model h1 {
+    font-size: 80px;
+    color: white;
+    padding-bottom: 70px;
+}
+
+.model a {
+    position: relative;
+    overflow: hidden;
+    background-color: antiquewhite;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.model a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #009698;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.model a:hover::after {
+    width: 100%;
+}
+
+.cars {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.one,
+.two,
+.three {
+    background-color: rgb(107, 107, 107);
+    padding: 20px;
+}
+
+.cars .image img {
+    width: 40%;
+    float: right;
+}
